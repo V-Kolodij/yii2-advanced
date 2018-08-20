@@ -51,7 +51,7 @@ After receiving the code of the project perform the following steps to initializ
 6. For load demo content open a console terminal and run the command `yii fixture/load "*"`
 
     ```
-     /path/to/php-bin/php /path/to/web/short/yii fixture/load "*"
+     /path/to/php-bin/php /path/to/yii fixture/load "*"
 
     ```
     > **Caution:** this command will clear the current data from the database
