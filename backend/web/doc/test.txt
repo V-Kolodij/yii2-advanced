@@ -1,0 +1,43 @@
+var top_body = $("#field").offset().top;
+  var left_body = $("#field").offset().left;
+
+
+$('body').keydown(function(eventObject){
+ 			 if (eventObject.which == 38){
+       var top_body = $("#field").offset().top;
+    			var top = $("#square").offset().top;
+  				var left = $("#square").offset().left;
+          if (top > (top_body+5)){
+          top -= 5;
+          $("#square").offset({top: top, left: left});
+          }
+            }
+ 		 if (eventObject.which == 37){
+  			 top = $("#square").offset().top;
+ 			 	 left = $("#square").offset().left;
+        var left_body = $("#field").offset().left;
+         if (left > (left_body+5)){
+          left -= 5;
+          $("#square").offset({top: top, left: left});
+          }
+ 			}
+  if (eventObject.which == 39){
+  			 top = $("#square").offset().top;
+  			 left = $("#square").offset().left;
+         left_body = $("#field").offset().left;
+         
+         if (left != 286){
+         left += 5;
+         $("#square").offset({top: top, left: left});
+         }
+        }
+  if (eventObject.which == 40){
+  			 top = $("#square").offset().top;
+  			 left = $("#square").offset().left;
+         top_body = $("#field").offset().top;
+          if (top != 286){
+         top += 5;
+         $("#square").offset({top: top, left: left});
+         }
+  			  }
+});

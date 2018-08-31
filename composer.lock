@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "186c4401054338ed7d7dd40d37c59b29",
+    "content-hash": "e43ea9cea7af86e071d83b9d85dae591",
     "packages": [
         {
             "name": "asimlqt/php-google-spreadsheet-client",
@@ -71,6 +71,25 @@
             "type": "bower-asset",
             "license": [
                 "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/ckeditor",
+            "version": "4.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ckeditor/ckeditor-releases.git",
+                "reference": "485918a01ecac5bd286f169e831eddcc895f5132"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/485918a01ecac5bd286f169e831eddcc895f5132",
+                "reference": "485918a01ecac5bd286f169e831eddcc895f5132",
+                "shasum": null
+            },
+            "type": "bower-asset",
+            "license": [
+                "For licensing, see LICENSE.md or http://ckeditor.com/license."
             ]
         },
         {
@@ -526,6 +545,49 @@
                 "fixtures"
             ],
             "time": "2018-07-12T10:23:15+00:00"
+        },
+        {
+            "name": "julian-b90/yii2-seomanager",
+            "version": "0.0.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Julian-B90/yii2-seomanager.git",
+                "reference": "5f457db8a3c1a293372e31118fb56b6082c1b853"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Julian-B90/yii2-seomanager/zipball/5f457db8a3c1a293372e31118fb56b6082c1b853",
+                "reference": "5f457db8a3c1a293372e31118fb56b6082c1b853",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/ckeditor": "4.*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "julianb90\\seomanager\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Julian Böhnke",
+                    "email": "tr@julianb.de"
+                }
+            ],
+            "description": "Seo Manager for every Site",
+            "keywords": [
+                "extension",
+                "seo",
+                "seomanager",
+                "yii2"
+            ],
+            "time": "2016-05-15T14:41:43+00:00"
         },
         {
             "name": "lajax/yii2-translate-manager",

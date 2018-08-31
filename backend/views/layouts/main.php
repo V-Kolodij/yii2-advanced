@@ -76,7 +76,7 @@ $languages = \yii\helpers\ArrayHelper::map($lang, 'language_id','language');
     echo  LanguageSelection::widget([
         'language' =>  $languages,
         'languageParam' => 'language',
-        'container' => 'div', // li for navbar, div for sidebar or footer example
+        'container' => 'li', // li for navbar, div for sidebar or footer example
         'classContainer' =>  'dropdown-toggle' // btn btn-default dropdown-toggle
     ]);
 //    echo Nav::widget([

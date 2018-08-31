@@ -2,6 +2,8 @@
 
 /* @var $this yii\web\View */
 
+use yii\helpers\Html;
+
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
@@ -9,10 +11,11 @@ $this->title = 'My Yii Application';
     <div class="jumbotron">
         <h1><?= Yii::t('app', 'Congratulations') ?>!</h1>
 
-        <p class="lead"><?= Yii::$app->language ?></p>
+        <p class="lead"><?= Yii::$app->language;?></p>
         <p><?= $dbname?></p>
 
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <p><?= Html::a('Загрузити', ['site/download'], ['class' => 'btn btn-success']) ?></p>
 
     </div>
 

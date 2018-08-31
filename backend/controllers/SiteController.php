@@ -31,7 +31,7 @@ class SiteController extends Controller
                         'roles' => ['@'],
                     ],
                     [
-                        'actions' => ['index'],
+                        'actions' => ['index', 'download'],
                         'allow' => true,
                         'roles' => ['canAdmin'],
                     ],
@@ -111,5 +111,10 @@ class SiteController extends Controller
         } else {
             return null;
         }
+    }
+
+    public function actionDownload()
+    {
+        return \Yii::$app->response->sendFile(Yii::getAlias('@backend').'/web/doc/test.txt')->send();
     }
 }
